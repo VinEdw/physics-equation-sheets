@@ -11,6 +11,38 @@ The next step is understanding what the equations mean, when to use them, and ho
 
 #show: rest => columns(2, rest)
 
+== SI Prefixes
+
+#table(
+  columns: 3,
+  table.header([Name], [Symbol], [Factor]),
+  [Quetta], [Q ], $10^(30)$ ,
+  [Ronna ], [R ], $10^(27)$ ,
+  [Yotta ], [Y ], $10^(24)$ ,
+  [Zetta ], [Z ], $10^(21)$ ,
+  [Exa   ], [E ], $10^(18)$ ,
+  [Peta  ], [P ], $10^(15)$ ,
+  [Tera  ], [T ], $10^(12)$ ,
+  [Giga  ], [G ], $10^(9)$  ,
+  [Mega  ], [M ], $10^(6)$  ,
+  [Kilo  ], [k ], $10^(3)$  ,
+  [Hecto ], [h ], $10^(2)$  ,
+  [Deka  ], [da], $10^(1)$  ,
+  [\-    ], [\-], $10^(0)$  ,
+  [Deci  ], [d ], $10^(-1)$ ,
+  [Centi ], [c ], $10^(-2)$ ,
+  [Milli ], [m ], $10^(-3)$ ,
+  [Micro ], [μ ], $10^(-6)$ ,
+  [Nano  ], [n ], $10^(-9)$ ,
+  [Pico  ], [p ], $10^(-12)$,
+  [Femto ], [f ], $10^(-15)$,
+  [Atto  ], [a ], $10^(-18)$,
+  [Zepto ], [z ], $10^(-21)$,
+  [Yocto ], [y ], $10^(-24)$,
+  [Ronto ], [r ], $10^(-27)$,
+  [Quecto], [q ], $10^(-30)$,
+)
+
 == Constants
 
 - $g = 9.8 units(m/s^2)$
@@ -597,35 +629,3 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Buoyant force ($B$ or $F_B$)
   - $B = rho_"fluid" V_"displaced" g$
   - Points opposite $arrow(g)$
-
-== SI Prefixes
-
-#table(
-  columns: 3,
-  table.header([Name], [Symbol], [Factor]),
-  [Quetta], [Q ], $10^(30)$ ,
-  [Ronna ], [R ], $10^(27)$ ,
-  [Yotta ], [Y ], $10^(24)$ ,
-  [Zetta ], [Z ], $10^(21)$ ,
-  [Exa   ], [E ], $10^(18)$ ,
-  [Peta  ], [P ], $10^(15)$ ,
-  [Tera  ], [T ], $10^(12)$ ,
-  [Giga  ], [G ], $10^(9)$  ,
-  [Mega  ], [M ], $10^(6)$  ,
-  [Kilo  ], [k ], $10^(3)$  ,
-  [Hecto ], [h ], $10^(2)$  ,
-  [Deka  ], [da], $10^(1)$  ,
-  [\-    ], [\-], $10^(0)$  ,
-  [Deci  ], [d ], $10^(-1)$ ,
-  [Centi ], [c ], $10^(-2)$ ,
-  [Milli ], [m ], $10^(-3)$ ,
-  [Micro ], [μ ], $10^(-6)$ ,
-  [Nano  ], [n ], $10^(-9)$ ,
-  [Pico  ], [p ], $10^(-12)$,
-  [Femto ], [f ], $10^(-15)$,
-  [Atto  ], [a ], $10^(-18)$,
-  [Zepto ], [z ], $10^(-21)$,
-  [Yocto ], [y ], $10^(-24)$,
-  [Ronto ], [r ], $10^(-27)$,
-  [Quecto], [q ], $10^(-30)$,
-)
