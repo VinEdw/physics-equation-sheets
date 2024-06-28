@@ -1,4 +1,5 @@
 #import "@preview/cetz:0.2.2"
+#set text(size: 12pt)
 #set par(leading: 1.00em)
 
 = PHYS 2AG Equations
