@@ -316,7 +316,7 @@ The next step is understanding what the equations mean, when to use them, and ho
   - $x = x_0 + v_(0x) t + 1/2 a_x t^2$
   - $v_x^2 = v_(0x)^2 + 2 a_x (x - x_0)$
 - Knows and Unknowns
-  - #grid(
+  - #box(grid(
     columns: 2,
     align: center,
     inset: 5pt,
@@ -327,7 +327,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     $v_x$   ,$v_y$,
     $a_x$   ,$a_y$,
     grid.cell(colspan: 2, $t$),
-  )
+  ))
 
 == Forces
 
