@@ -52,6 +52,7 @@ The next step is understanding what the equations mean, when to use them, and ho
 - $G = 6.674 times 10^(-11)  units((N dot m^2) / "kg"^2)$
 - $M_"Earth" = 5.97 times 10^(24) units("kg")$
 - $R_"Earth" = 6.38 times 10^(6) units(m)$
+- $1 "rev" = 2 pi "rad" = 360 degree$
 
 == Geometry
 
