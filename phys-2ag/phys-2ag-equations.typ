@@ -431,7 +431,7 @@ The next step is understanding what the equations mean, when to use them, and ho
 - $arrow(p) = m arrow(v)$ (momentum)
 - $arrow(J) = arrow(F)_"net,avg" Delta t = Delta arrow(p)$ (impulse-momentum theorem)
 - Conservation of momentum
-  - If $arrow(F)_"net" = 0$, then $p_i = p_f$
+  - If $arrow(J) = 0$, then $p_i = p_f$
   - Applies to pretty much all collisions & explosions
 - Collision types
   - Perfectly inelastic
