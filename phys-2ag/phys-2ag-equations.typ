@@ -440,7 +440,7 @@ The next step is understanding what the equations mean, when to use them, and ho
   - Inelastic
     - In between perfectly inelastic and perfectly elastic
   - Perfectly elastic
-    - "Bouncy"
+    - "Super Bouncy"
     - $K_i = K_f$
 
 == Rotational Kinematics
