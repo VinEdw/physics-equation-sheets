@@ -415,6 +415,9 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Elastic potential energy ($U_s$)
   - Energy due to squishing/stretching a spring from its natural length
   - $U_g = 1/2 k s^2$
+- Mechanical energy ($E_"mech"$)
+  - Kinetic energy plus potential energy
+  - $E_"mech" = K + U$
 - Internal energy ($U_"int"$)
   - $Delta U_"th" = m c Delta T$ (due to temperature)
   - $Delta U_"p" = plus.minus m L$ (due to phase change)
