@@ -1,4 +1,5 @@
-#import "@preview/cetz:0.2.2"
+#import "@preview/cetz:0.3.1": canvas, draw, angle
+#import "@preview/cetz-plot:0.1.0": plot
 
 #set text(size: 12pt)
 #set par(leading: 1.00em)
@@ -58,63 +59,58 @@ The next step is understanding what the equations mean, when to use them, and ho
 
 - Angle addition postulate
   - $theta_1 + theta_2 = theta_3$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw three lines
     line((0, 0), (1, 3), name: "a")
     line((0, 0), (4, 1), name: "b")
     line((0, 0), (3, 2), name: "c")
     // Draw the angles between them
-    cetz.angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 0.75, label-radius: 180%, stroke: red)
-    cetz.angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 1, label-radius: 180%, stroke: blue)
-    cetz.angle.angle((0, 0), "a.end", "b.end", label: $theta_3$, radius: 2.5, label-radius: 120%, stroke: green)
+    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 0.75, label-radius: 180%, stroke: red)
+    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 1, label-radius: 180%, stroke: blue)
+    angle.angle((0, 0), "a.end", "b.end", label: $theta_3$, radius: 2.5, label-radius: 120%, stroke: green)
   })
 - Complementary angles
   - $theta_1 + theta_2 = 90 degree$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw two lines that form a right angle
     line((0, 0), (0, 2), name: "a")
     line((0, 0), (2, 0), name: "b")
     // Draw a line cutting through
     line((0, 0), (1, 2), name: "c")
     // Label the angles
-    cetz.angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red)
-    cetz.angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue)
+    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red)
+    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue)
   })
 - Supplementary angles
   - $theta_1 + theta_2 = 180 degree$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw two lines that form a right angle
     line((0, 0), (-2, 0), name: "a")
     line((0, 0), (2, 0), name: "b")
     // Draw a line cutting through
     line((0, 0), (1, 2), name: "c")
     // Label the angles
-    cetz.angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red)
-    cetz.angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue)
+    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red)
+    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue)
   })
 - Vertical angles
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw two lines that intersect
     set-style(mark: (symbol: ">"))
     line((-2, -1), (2, 1), name: "a")
     line((-2, 1), (2, -1), name: "b")
     // Draw the top and bottom angles
     set-style(mark: (symbol: none))
-    cetz.angle.angle((0, 0), "a.start", "b.end", label: $theta$, radius: 1)
-    cetz.angle.angle((0, 0), "b.start", "a.end", label: $theta$, radius: 1)
+    angle.angle((0, 0), "a.start", "b.end", label: $theta$, radius: 1)
+    angle.angle((0, 0), "b.start", "a.end", label: $theta$, radius: 1)
   })
 - Parallel lines cut by transversal
-  #cetz.canvas({
-  import cetz
-  import cetz.draw: *
+  #canvas({
+  import draw: *
   // Draw parallel lines cut by transversal
   set-style(mark: (symbol: ">"))
   line((0, 0), (4, 0), name: "a")
@@ -131,7 +127,7 @@ The next step is understanding what the equations mean, when to use them, and ho
       (1, "b.end", "c.start"),
       (1, "b.start", "c.end"),
     ) {
-      cetz.angle.angle("i." + str(i), a, b, label: $theta_1$, radius: 0.75, label-radius: 150%)
+      angle.angle("i." + str(i), a, b, label: $theta_1$, radius: 0.75, label-radius: 150%)
   }
   // Draw second set of angle labels
   set-style(angle: (stroke: blue))
@@ -141,14 +137,13 @@ The next step is understanding what the equations mean, when to use them, and ho
       (1, "b.start", "c.start"),
       (1, "b.end", "c.end"),
     ) {
-      cetz.angle.angle("i." + str(i), a, b, label: $theta_2$, radius: 0.5, label-radius: 150%)
+      angle.angle("i." + str(i), a, b, label: $theta_2$, radius: 0.5, label-radius: 150%)
   }
   })
 - Triangles
   - $A = 1/2 b h$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Set the points
     let A = (0, 0)
     let B = (1, 2)
@@ -166,9 +161,8 @@ The next step is understanding what the equations mean, when to use them, and ho
   - $theta_1 + theta_2 + theta_3 = 180 degree$
   - $A/sin(theta_1) = B/sin(theta_2) = C/sin(theta_3)$ (law of sines)
   - $C^2 = A^2 + B^2 - 2 A B cos(theta_3)$ (law of cosines)
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Set the points
     let A = (0, 0)
     let B = (1, 2)
@@ -181,7 +175,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     let i = 1
     let points = (A, B, C)
     while i <= 3 {
-      cetz.angle.angle(..points, label: $theta_#i$, label-radius: 160%)
+      angle.angle(..points, label: $theta_#i$, label-radius: 160%)
       let last_point = points.remove(0)
       points.push(last_point)
       i += 1
@@ -197,9 +191,8 @@ The next step is understanding what the equations mean, when to use them, and ho
   - $sin(theta_1) = cos(theta_2) = B/C$
   - $cos(theta_1) = sin(theta_2) = A/C$
   - $tan(theta_1) = 1/tan(theta_2) = B/A$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Set the points
     let A = (0, 0)
     let B = (3, 4)
@@ -213,16 +206,15 @@ The next step is understanding what the equations mean, when to use them, and ho
     content("B.mid", anchor: "west", padding: 0.2, $B$)
     content("A.mid", anchor: "north", padding: 0.2, $A$)
     // Label the angles
-    cetz.angle.angle(A, B, C, label: $theta_1$, label-radius: 160%)
-    cetz.angle.angle(B, A, C, label: $theta_2$, label-radius: 160%)
-    cetz.angle.right-angle(C, A, B, label: none)
+    angle.angle(A, B, C, label: $theta_1$, label-radius: 160%)
+    angle.angle(B, A, C, label: $theta_2$, label-radius: 160%)
+    angle.right-angle(C, A, B, label: none)
   })
 - Rectangles
   - $A = b h$
   - $P = 2b + 2h$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw a rectangle
     rect((0, 0), (2, 1), name: "rect")
     // Label the edges
@@ -231,9 +223,8 @@ The next step is understanding what the equations mean, when to use them, and ho
   })
 - Trapezoid
   - $A = 1/2 (b_1 + b_2) h$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw a trapezoid
     let A = (0, 0)
     let B = (1, 2)
@@ -253,9 +244,8 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Inclined plane
   - Inclined planes are typically described by their angle above horizontal
   - The tilted coordinate axes are rotated that angle relative to the standard coordinate axes
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw the incline and ground
     line((0, 0), (4, 3), name: "incline")
     line((0, 0), (4, 0), name: "floor")
@@ -263,7 +253,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     set-style(line: (stroke: (dash: "dashed")))
     set-style(angle: (mark: (end: ">")))
     // Label the angle with respect to horizontal
-    cetz.angle.angle((0, 0), "floor.end", "incline.end", label: $theta$, radius: 1, label-radius: 130%)
+    angle.angle((0, 0), "floor.end", "incline.end", label: $theta$, radius: 1, label-radius: 130%)
     // Draw the standard axes
     set-style(line: (stroke: (paint: blue)))
     line((0, 1.5), (4, 1.5), name: "x-standard")
@@ -278,16 +268,15 @@ The next step is understanding what the equations mean, when to use them, and ho
       for side in ("start", "end") {
         let a = axis + "-standard." + side
         let b = axis + "-rotated." + side
-        cetz.angle.angle(intersection, a, b, label: $theta$, radius: 1, label-radius: 130%)
+        angle.angle(intersection, a, b, label: $theta$, radius: 1, label-radius: 130%)
       }
     }
   })
 - Circles
   - $C = 2 pi r$
   - $A = pi r^2$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     circle((0, 0), radius: 1, name: "c")
     circle("c.center", radius: 0.05, fill: black)
     line((0, 0), (1/calc.sqrt(2), 1/calc.sqrt(2)), name: "r", mark: (end: ">"))
@@ -385,15 +374,14 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Work ($W$)
   - Energy transferred via forces
   - $W = F d cos(theta)$
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw two lines
     set-style(line: (mark: (end: ">")))
     line((0, 0), (1, 2), name: "F")
     line((0, 0), (3, 1), name: "d")
     // Draw the angle between them
-    cetz.angle.angle((0, 0), "F.end", "d.end", label: $theta$, radius: 1, label-radius: 150%)
+    angle.angle((0, 0), "F.end", "d.end", label: $theta$, radius: 1, label-radius: 150%)
     // Label the lines
     content("F.end", anchor: "south", padding: 0.3, $arrow(F)$)
     content("d.end", anchor: "south", padding: 0.3, $arrow(d)$)
@@ -465,9 +453,8 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Torque ($tau$)
   - $tau = plus.minus F r sin(theta)$
   - $sin(theta) = sin(theta')$, so either angle can be used
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw two lines
     set-style(line: (mark: (end: ">")))
     line((3, 1), (4, 3), name: "F")
@@ -475,8 +462,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     // Extend the r vector
     line((3, 1), (5, 5/3), name: "e", mark: none, stroke: (dash: "dashed"))
     // Label the angles between them
-    cetz.angle.angle("r.end", "F.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%)
-    cetz.angle.angle("r.end", "F.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%)
+    angle.angle("r.end", "F.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%)
+    angle.angle("r.end", "F.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%)
     // Label the lines
     content("F.end", anchor: "south", padding: 0.3, $arrow(F)$)
     content("r.end", anchor: "north", padding: 0.3, $arrow(r)$)
@@ -499,9 +486,8 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Angular momentum ($L$)
   - $L = m v r sin(theta)$ (point particle)
   - $sin(theta) = sin(theta')$, so either angle can be used
-  #cetz.canvas({
-    import cetz
-    import cetz.draw: *
+  #canvas({
+    import draw: *
     // Draw two lines
     set-style(line: (mark: (end: ">")))
     line((3, 1), (4, 3), name: "v")
@@ -509,8 +495,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     // Extend the r vector
     line((3, 1), (5, 5/3), name: "e", mark: none, stroke: (dash: "dashed"))
     // Label the angles between them
-    cetz.angle.angle("r.end", "v.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%)
-    cetz.angle.angle("r.end", "v.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%)
+    angle.angle("r.end", "v.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%)
+    angle.angle("r.end", "v.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%)
     // Label the lines
     content("v.end", anchor: "south", padding: 0.3, $arrow(v)$)
     content("r.end", anchor: "north", padding: 0.3, $arrow(r)$)
@@ -528,11 +514,10 @@ The next step is understanding what the equations mean, when to use them, and ho
 
 == Simple Harmonic Motion
 
-#cetz.canvas({
-  import cetz
-  import cetz.draw: *
+#canvas({
+  import draw: *
   // Draw the wave plot
-  cetz.plot.plot(size: (6, 4),
+  plot.plot(size: (6, 4),
     name: "plot",
     axis-style: "school-book",
     x-label: $t$,
@@ -540,11 +525,11 @@ The next step is understanding what the equations mean, when to use them, and ho
     x-tick-step: none,
     y-tick-step: none,
     {
-      cetz.plot.add(domain: (0, 4 * calc.pi),
+      plot.add(domain: (0, 4 * calc.pi),
         t => (t, calc.cos(t)))
-      cetz.plot.add-anchor("a", (0, 1))
-      cetz.plot.add-anchor("b", (2 * calc.pi, 1))
-      cetz.plot.add-anchor("c", (2 * calc.pi, 0))
+      plot.add-anchor("a", (0, 1))
+      plot.add-anchor("b", (2 * calc.pi, 1))
+      plot.add-anchor("c", (2 * calc.pi, 0))
   })
   // Label the period and amplitude
   set-style(mark: (symbol: ">"))
@@ -576,21 +561,20 @@ The next step is understanding what the equations mean, when to use them, and ho
 
 == Waves
 
-#cetz.canvas({
-  import cetz
-  import cetz.draw: *
+#canvas({
+  import draw: *
   // Draw the wave plot
-  cetz.plot.plot(size: (6, 4),
+  plot.plot(size: (6, 4),
     name: "plot",
     axis-style: "school-book",
     x-tick-step: none,
     y-tick-step: none,
     {
-      cetz.plot.add(domain: (0, 4 * calc.pi),
+      plot.add(domain: (0, 4 * calc.pi),
         t => (t, calc.cos(t)))
-      cetz.plot.add-anchor("a", (0, 1))
-      cetz.plot.add-anchor("b", (2 * calc.pi, 1))
-      cetz.plot.add-anchor("c", (2 * calc.pi, 0))
+      plot.add-anchor("a", (0, 1))
+      plot.add-anchor("b", (2 * calc.pi, 1))
+      plot.add-anchor("c", (2 * calc.pi, 0))
   })
   // Label the wavelength and amplitude
   set-style(mark: (symbol: ">"))
