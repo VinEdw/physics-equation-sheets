@@ -253,6 +253,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     set-style(line: (stroke: (dash: "dashed")))
     set-style(angle: (mark: (end: ">")))
     // Label the angle with respect to horizontal
+    set-style(line: (stroke: (dash: "solid")))
     angle.angle((0, 0), "floor.end", "incline.end", label: $theta$, radius: 1, label-radius: 130%)
     // Draw the standard axes
     set-style(line: (stroke: (paint: blue)))
@@ -263,6 +264,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     line((0, 0), (4, 3), name: "x-rotated")
     line((3.125, 0), (0.875, 3), name: "y-rotated")
     // Label the angle between the axes
+    set-style(line: (stroke: (dash: "solid", paint: black)))
     let intersection = (2, 1.5)
     for axis in ("x", "y") {
       for side in ("start", "end") {
