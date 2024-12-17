@@ -485,6 +485,12 @@ The next step is understanding what the equations mean, when to use them, and ho
   - Draw all external forces acting on the system at the location where they are acting
   - Note the angle for any forces acting at an angle relative to the chosen axes, or relative to a vector pointing from the pivot to where the force acts
   - Note how far each force is acting from the axis of rotation
+- Effective mass ($m_"eff"$)
+  - $m_"eff" = I / r^2$
+  - The effective mass of a pulley when analyzing a pulley system as a whole
+  - Contributes to the total system mass
+  - $I$ is the moment of inertia of the pulley about its axle
+  - $r$ is the distance from the axle to where the string is attached to the pulley
 - Angular momentum ($L$)
   - $L = m v r sin(theta)$ (point particle)
   - $sin(theta) = sin(theta')$, so either angle can be used
