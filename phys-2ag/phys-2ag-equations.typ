@@ -66,9 +66,9 @@ The next step is understanding what the equations mean, when to use them, and ho
     line((0, 0), (4, 1), name: "b")
     line((0, 0), (3, 2), name: "c")
     // Draw the angles between them
-    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 0.75, label-radius: 180%, stroke: red)
-    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 1, label-radius: 180%, stroke: blue)
-    angle.angle((0, 0), "a.end", "b.end", label: $theta_3$, radius: 2.5, label-radius: 120%, stroke: green)
+    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 0.75, label-radius: 180%, stroke: red, direction: "cw")
+    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 1, label-radius: 180%, stroke: blue, direction: "ccw")
+    angle.angle((0, 0), "a.end", "b.end", label: $theta_3$, radius: 2.5, label-radius: 120%, stroke: green, direction: "cw")
   })
 - Complementary angles
   - $theta_1 + theta_2 = 90 degree$
@@ -80,8 +80,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     // Draw a line cutting through
     line((0, 0), (1, 2), name: "c")
     // Label the angles
-    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red)
-    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue)
+    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red, direction: "cw")
+    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue, direction: "ccw")
   })
 - Supplementary angles
   - $theta_1 + theta_2 = 180 degree$
@@ -93,8 +93,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     // Draw a line cutting through
     line((0, 0), (1, 2), name: "c")
     // Label the angles
-    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red)
-    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue)
+    angle.angle((0, 0), "a.end", "c.end", label: $theta_1$, radius: 1, label-radius: 150%, stroke: red, direction: "cw")
+    angle.angle((0, 0), "b.end", "c.end", label: $theta_2$, radius: 0.75, label-radius: 150%, stroke: blue, direction: "ccw")
   })
 - Vertical angles
   #canvas({
@@ -105,8 +105,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     line((-2, 1), (2, -1), name: "b")
     // Draw the top and bottom angles
     set-style(mark: (symbol: none))
-    angle.angle((0, 0), "a.start", "b.end", label: $theta$, radius: 1)
-    angle.angle((0, 0), "b.start", "a.end", label: $theta$, radius: 1)
+    angle.angle((0, 0), "a.start", "b.end", label: $theta$, radius: 1, direction: "ccw")
+    angle.angle((0, 0), "b.start", "a.end", label: $theta$, radius: 1, direction: "cw")
   })
 - Parallel lines cut by transversal
   #canvas({
@@ -127,7 +127,7 @@ The next step is understanding what the equations mean, when to use them, and ho
       (1, "b.end", "c.start"),
       (1, "b.start", "c.end"),
     ) {
-      angle.angle("i." + str(i), a, b, label: $theta_1$, radius: 0.75, label-radius: 150%)
+      angle.angle("i." + str(i), b, a, label: $theta_1$, radius: 0.75, label-radius: 150%)
   }
   // Draw second set of angle labels
   set-style(angle: (stroke: blue))
@@ -175,7 +175,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     let i = 1
     let points = (A, B, C)
     while i <= 3 {
-      angle.angle(..points, label: $theta_#i$, label-radius: 160%)
+      angle.angle(..points, label: $theta_#i$, label-radius: 160%, direction: "cw")
       let last_point = points.remove(0)
       points.push(last_point)
       i += 1
@@ -206,8 +206,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     content("B.mid", anchor: "west", padding: 0.2, $B$)
     content("A.mid", anchor: "north", padding: 0.2, $A$)
     // Label the angles
-    angle.angle(A, B, C, label: $theta_1$, label-radius: 160%)
-    angle.angle(B, A, C, label: $theta_2$, label-radius: 160%)
+    angle.angle(A, B, C, label: $theta_1$, label-radius: 160%, direction: "cw")
+    angle.angle(B, A, C, label: $theta_2$, label-radius: 160%, direction: "ccw")
     angle.right-angle(C, A, B, label: none)
   })
 - Rectangles
@@ -383,7 +383,7 @@ The next step is understanding what the equations mean, when to use them, and ho
     line((0, 0), (1, 2), name: "F")
     line((0, 0), (3, 1), name: "d")
     // Draw the angle between them
-    angle.angle((0, 0), "F.end", "d.end", label: $theta$, radius: 1, label-radius: 150%)
+    angle.angle((0, 0), "F.end", "d.end", label: $theta$, radius: 1, label-radius: 150%, direction: "cw")
     // Label the lines
     content("F.end", anchor: "south", padding: 0.3, $arrow(F)$)
     content("d.end", anchor: "south", padding: 0.3, $arrow(d)$)
@@ -464,8 +464,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     // Extend the r vector
     line((3, 1), (5, 5/3), name: "e", mark: none, stroke: (dash: "dashed"))
     // Label the angles between them
-    angle.angle("r.end", "F.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%)
-    angle.angle("r.end", "F.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%)
+    angle.angle("r.end", "F.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%, direction: "ccw")
+    angle.angle("r.end", "F.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%, direction: "cw")
     // Label the lines
     content("F.end", anchor: "south", padding: 0.3, $arrow(F)$)
     content("r.end", anchor: "north", padding: 0.3, $arrow(r)$)
@@ -503,8 +503,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     // Extend the r vector
     line((3, 1), (5, 5/3), name: "e", mark: none, stroke: (dash: "dashed"))
     // Label the angles between them
-    angle.angle("r.end", "v.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%)
-    angle.angle("r.end", "v.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%)
+    angle.angle("r.end", "v.end", "r.start", label: $theta'$, radius: 0.5, label-radius: 150%, direction: "ccw")
+    angle.angle("r.end", "v.end", "e.end", label: $theta$, radius: 0.75, label-radius: 150%, direction: "cw")
     // Label the lines
     content("v.end", anchor: "south", padding: 0.3, $arrow(v)$)
     content("r.end", anchor: "north", padding: 0.3, $arrow(r)$)
