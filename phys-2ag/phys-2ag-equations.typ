@@ -595,7 +595,7 @@ The next step is understanding what the equations mean, when to use them, and ho
 - $v = f lambda$
   - Wave speed depends on properties of the medium, not on wavelength and frequency
   - $v = sqrt(F_T/mu)$ (speed of wave in a string)
-  - $v = (331.5 units(m/s)) + (0.6 units((m\/s)/degree.c)) T$ (speed of sound in air)
+  - $v = (331.5 units(m/s)) + (0.6 units((m\/s)/(degree "C"))) T$ (speed of sound in air)
 - Wave function
   - $y(x, t) = A cos(k x plus.minus omega t)$
     - Plus when moving in the $-x$ direction
