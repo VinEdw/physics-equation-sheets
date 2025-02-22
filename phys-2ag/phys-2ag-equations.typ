@@ -1,5 +1,5 @@
-#import "@preview/cetz:0.3.1": canvas, draw, angle
-#import "@preview/cetz-plot:0.1.0": plot
+#import "@preview/cetz:0.3.2": canvas, draw, angle
+#import "@preview/cetz-plot:0.1.1": plot
 
 #set text(size: 12pt)
 #set par(leading: 1.00em)
