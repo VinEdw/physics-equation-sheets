@@ -1,8 +1,8 @@
 #import "@preview/zero:0.5.0" as zero: num, zi
 
-#set page(margin: 0.5in)
+#set page(paper: "us-letter", margin: 0.5in)
 #set text(size: 12pt)
-#set par(leading: 1.00em)
+#set par(leading: 0.90em)
 
 #let Ns-m2 = zi.declare("N s/m^2")
 #let Ns-m4 = zi.declare("N s/m^4")
