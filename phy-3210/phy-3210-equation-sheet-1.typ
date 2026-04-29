@@ -138,7 +138,7 @@
   - $f(t) = f_0 cos(omega t)$
   - $x_"p" = A cos(omega t - delta)$
   - $A^2 = f_0^2 / ((omega_0^2 - omega^2)^2 + 4 beta^2 omega^2$
-  - $delta = arctan((2 beta omega)/(omega_0^2 - omega^2))$
+  - $delta = arctan((2 beta omega)/(omega_0^2 - omega^2))$ #v(0.05in)
   - $omega_2 = sqrt(omega_0^2 - 2 beta^2)$ (value for $omega$ to maximize $A$)
   - $"FWHM" approx 2 beta$ (full width at half maximum)
   - $Q = omega_0 / (2 beta)$ (quality factor)
