@@ -52,3 +52,31 @@
 - Free-Fall Acceleration
   - $arrow(g) = arrow(g)_0 + Omega^2 R sin(theta) hat(rho)$
 
+== Chapter 10 Rotational Motion of Rigid Bodies
+
+- Properties of Center of Mass
+  - $arrow(F)^"ext" = M dot.double(arrow(R))$
+  - $arrow(r)'_alpha = arrow(r)_alpha - arrow(R)$
+  - $arrow(L) = arrow(R) times arrow(P) + sum arrow(r)'_alpha times m_alpha dot(arrow(r))'_alpha$
+  - $arrow(L) = arrow(L)_"orb" + arrow(L)_"spin"$
+  - $dot(arrow(L))_"orb" = arrow(R) times arrow(F)^"ext"$
+  - $dot(arrow(L))_"spin" = arrow(Gamma)^"ext" ("about CM")$
+  - $T = 1/2 M dot(arrow(R))^2 + 1/2 sum m_alpha dot(arrow(r))'_alpha^2$
+- Rotation About Any Axis
+  - $arrow(L) = II arrow(omega)$
+  - $II = mat(I_(x x), I_(x y), I_(x z); I_(y x), I_(y y), I_(y z); I_(z x), I_(z y), I_(z z))$
+  - $II = tilde(II)$
+  - $I_(x x) = sum m_alpha (y_alpha^2 + z_alpha^2)$
+  - $I_(x y) = -sum m_alpha x_alpha y_alpha$
+  - $T = 1/2 arrow(omega) dot arrow(L)$
+- Principal Axes of Inertia
+  - $arrow(L) = lambda arrow(omega)$
+  - $(II - lambda bb(1)) arrow(omega) = 0$
+  - $det(II - lambda bb(1)) = 0$
+  - $II' = mat(lambda_1, 0, 0; 0, lambda_2, 0; 0, 0, lambda_3)$
+- Euler's Equations
+  - $dot(arrow(L)) + arrow(omega) times arrow(L) = arrow(Gamma)$
+  - $lambda_1 dot(omega)_1 - (lambda_2 - lambda_3) omega_2 omega_3 = Gamma_1$
+  - $lambda_2 dot(omega)_2 - (lambda_3 - lambda_1) omega_3 omega_1 = Gamma_2$
+  - $lambda_3 dot(omega)_3 - (lambda_1 - lambda_2) omega_1 omega_2 = Gamma_3$
+
