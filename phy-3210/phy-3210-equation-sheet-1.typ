@@ -91,6 +91,10 @@
   - $U(arrow(r)) = -W(arrow(r)_0 arrow arrow(r)) = -integral_(arrow(r)_0)^(arrow(r)) arrow(F)(arrow(r)') dot d arrow(r)'$
   - $arrow(F) = -arrow(gradient) U$
   - $arrow(gradient) times arrow(F) = 0$
+- Gravitational Potential Energy
+  - $U_g = m g z$
+- Spring Potential Energy
+  - $U_s = 1/2 k (L - L_0)^2$
 - Mechanical Energy
   - $E = T + U$
   - $Delta E = W_"nc"$
