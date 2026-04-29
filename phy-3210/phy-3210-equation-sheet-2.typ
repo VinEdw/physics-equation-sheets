@@ -31,3 +31,24 @@
   - $U(r) = -gamma / r$
   - $tau^2 = (4 pi^2 mu)/gamma a^3$
 
+== Chapter 9 Mechanics in Noninertial Frames
+
+- Inertial Force
+  - $arrow(F)_"inertial" = -m arrow(A)$
+- Tides
+  - $arrow(F)_"tid" = -G M_m m (hat(d)/d^2 - hat(d)_0/d_0^2)$  #v(0.05in)
+  - $U_"tid" = -G M_m m (1/d + x/d_0^2)$
+- Angular Velocity Vector
+  - $arrow(omega) = omega hat(u)$
+  - $arrow(v) = arrow(omega) times arrow(r)$
+  - $(d hat(e))/(d t) = arrow(omega) times hat(e)$
+  - $arrow(omega)_31 = arrow(omega)_32 + arrow(omega)_21$
+- Time Derivatives in a Rotating Frame
+  - $((d arrow(Q))/(d t))_(cal(S)_0) = ((d arrow(Q))/(d t))_cal(S) + arrow(Omega) times arrow(Q)$
+- Newton's Second Law in a Rotating Frame
+  - $m dot.double(arrow(r)) = arrow(F) + arrow(F)_"cor" + arrow(F)_"cf"$
+  - $arrow(F)_"cor" = 2 m dot(arrow(r)) times arrow(Omega)$
+  - $arrow(F)_"cf" = m (arrow(Omega) times arrow(r)) times arrow(Omega) = m Omega^2 rho hat(rho)$
+- Free-Fall Acceleration
+  - $arrow(g) = arrow(g)_0 + Omega^2 R sin(theta) hat(rho)$
+
