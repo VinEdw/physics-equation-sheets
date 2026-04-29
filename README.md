@@ -9,3 +9,4 @@ The units were handled using a Typst library called [Zero](https://github.com/Mc
 
 - [PHYS 2AG](https://github.com/VinEdw/physics-equation-sheets/blob/master/phys-2ag/phys-2ag-equations.pdf)
 - [PHY 3210 Equation Sheet 1](https://github.com/VinEdw/physics-equation-sheets/blob/master/phy-3210/phy-3210-equation-sheet-1.pdf)
+- [PHY 3210 Equation Sheet 2](https://github.com/VinEdw/physics-equation-sheets/blob/master/phy-3210/phy-3210-equation-sheet-2.pdf)
