@@ -80,3 +80,12 @@
   - $lambda_2 dot(omega)_2 - (lambda_3 - lambda_1) omega_3 omega_1 = Gamma_2$
   - $lambda_3 dot(omega)_3 - (lambda_1 - lambda_2) omega_1 omega_2 = Gamma_3$
 
+== Chapter 11 Coupled Oscillators and Normal Modes
+
+- Equations of Motion
+  - $MM dot.double(arrow(q)) = - KK arrow(q)$
+- Normal Modes
+  - $arrow(q)(t) = "Re"[arrow(z)(t)]$
+  - $arrow(z)(t) = arrow(a) e^(i omega t)$
+  - $(KK - omega^2 MM) arrow(a) = 0$
+  - $det(KK - omega^2 MM) = 0$
