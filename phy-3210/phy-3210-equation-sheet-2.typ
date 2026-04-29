@@ -36,7 +36,7 @@
 - Inertial Force
   - $arrow(F)_"inertial" = -m arrow(A)$
 - Tides
-  - $arrow(F)_"tid" = -G M_m m (hat(d)/d^2 - hat(d)_0/d_0^2)$  #v(0.05in)
+  - $arrow(F)_"tid" = -G M_m m (hat(d)/d^2 - hat(d)_0/d_0^2)$ #v(0.05in)
   - $U_"tid" = -G M_m m (1/d + x/d_0^2)$
 - Angular Velocity Vector
   - $arrow(omega) = omega hat(u)$
