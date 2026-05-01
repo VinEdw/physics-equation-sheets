@@ -54,6 +54,13 @@
 
 == Chapter 10 Rotational Motion of Rigid Bodies
 
+#let components = ($x$, $y$, $z$)
+#let inertia_tensor_rows = for i in components {
+  (for j in components {
+    ($I_(#i #j)$,)
+  },)
+}
+
 - Properties of Center of Mass
   - $arrow(F)^"ext" = M dot.double(arrow(R))$
   - $arrow(r)'_alpha = arrow(r)_alpha - arrow(R)$
@@ -64,7 +71,7 @@
   - $T = 1/2 M dot(arrow(R))^2 + 1/2 sum m_alpha dot(arrow(r))'_alpha^2$
 - Rotation About Any Axis
   - $arrow(L) = II arrow(omega)$
-  - $II = mat(I_(x x), I_(x y), I_(x z); I_(y x), I_(y y), I_(y z); I_(z x), I_(z y), I_(z z))$
+  - $II = #math.mat(..inertia_tensor_rows)$
   - $II = tilde(II)$
   - $I_(x x) = sum m_alpha (y_alpha^2 + z_alpha^2)$
   - $I_(x y) = -sum m_alpha x_alpha y_alpha$
