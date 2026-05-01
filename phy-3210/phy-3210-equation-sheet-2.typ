@@ -86,6 +86,10 @@
   - $lambda_1 dot(omega)_1 - (lambda_2 - lambda_3) omega_2 omega_3 = Gamma_1$
   - $lambda_2 dot(omega)_2 - (lambda_3 - lambda_1) omega_3 omega_1 = Gamma_2$
   - $lambda_3 dot(omega)_3 - (lambda_1 - lambda_2) omega_1 omega_2 = Gamma_3$
+- Generalized Parallel Axis Theorem
+  - Pivot point displaced by $Delta arrow(r) = (Delta x, Delta y, Delta z)$ from the CM
+  - $I_(x x) = I_(x x)^"cm" + M (Delta y^2 + Delta z^2)$
+  - $I_(y z) = I_(y z)^"cm" - M Delta y Delta z$
 
 == Chapter 11 Coupled Oscillators and Normal Modes
 
