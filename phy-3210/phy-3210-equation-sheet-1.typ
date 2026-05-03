@@ -156,11 +156,9 @@
 - Hamilton's Principle
   - Particle follows the path between two points that makes the action integral stationary
   - $S = integral_(t_1)^(t_2) cal(L) d t$
-- $cal(L) = T - U$
-- $(partial cal(L))/(partial q_i) = d/(d t) (partial cal(L))/(partial dot(q)_i)$
+- Lagrangian
+  - $cal(L) = T - U$
+- Lagrange's Equations
+  - $(partial cal(L))/(partial q_i) = d/(d t) (partial cal(L))/(partial dot(q)_i)$
 - Generalized Momentum
   - $p_i = (partial cal(L))/(partial dot(q)_i)$
-- Hamiltonian
-  - $cal(H) = sum p_i dot(q)_i - cal(L)$
-  - If $(partial cal(L))/(partial t) = 0$, then $cal(H) = "const."$
-  - If the generalized coordinates are natural, then $cal(H) = T + U$
