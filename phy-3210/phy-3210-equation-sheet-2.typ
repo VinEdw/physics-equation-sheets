@@ -21,15 +21,25 @@
   - $arrow(r)_2 = arrow(R) - m_1/M arrow(r)$
   - $T = 1/2 M dot(arrow(R))^2 + 1/2 mu dot(arrow(r))^2$
 - Kepler Orbits
-  - $r(phi.alt) = c / (1 + epsilon.alt cos(phi.alt))$
-  - $c = l^2 / (gamma mu)$
-  - $E = (gamma^2 mu)/(2 l^2) (epsilon.alt^2 - 1)$
-  - $a = c/(1 - epsilon.alt^2)$
-  - $b = c / sqrt(1 - epsilon.alt^2)$
-  - $gamma = G M m$
-  - $F(r) = -gamma / r^2$
-  - $U(r) = -gamma / r$
-  - $tau^2 = (4 pi^2 mu)/gamma a^3$
+  - General
+    - $r(phi.alt) = c / (1 + epsilon.alt cos(phi.alt))$
+    - $c = l^2 / (gamma mu)$
+    - $E = (gamma^2 mu)/(2 l^2) (epsilon.alt^2 - 1)$
+    - $gamma = G M m$ for gravitational force
+    - $F(r) = -gamma / r^2$
+    - $U(r) = -gamma / r$
+  - Bounded Orbits ($0 <= epsilon.alt < 1$)
+    - $(x + d)^2/a^2 + y^2/b^2 = 1$
+    - $a = c / (1 - epsilon.alt^2)$
+    - $b = c / sqrt(1 - epsilon.alt^2)$
+    - $d = a epsilon.alt$
+    - $tau^2 = (4 pi^2 mu)/gamma a^3$
+  - Unbounded Orbits ($epsilon.alt >= 1$)
+    - $y^2 = c^2 - 2 c x$ when $epsilon.alt = 1$
+    - $(x - delta)^2/alpha^2 - y^2/beta^2 = 1$ when $epsilon.alt > 1$
+    - $alpha = c / (epsilon.alt^2 - 1)$
+    - $beta = c / sqrt(epsilon.alt^2 - 1)$
+    - $delta = alpha epsilon.alt$
 
 == Chapter 9 Mechanics in Noninertial Frames
 
