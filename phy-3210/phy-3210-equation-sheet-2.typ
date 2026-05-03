@@ -100,3 +100,21 @@
   - $arrow(z)(t) = arrow(a) e^(i omega t)$
   - $(KK - omega^2 MM) arrow(a) = 0$
   - $det(KK - omega^2 MM) = 0$
+
+== Chapter 13 Hamiltonian Mechanics
+
+- Lagrangian
+  - $cal(L) = T - U$
+- Hamiltonian
+  - $cal(H) = sum p_i dot(q)_i - cal(L)$
+  - $cal(H) = T + U$ if the generalized coordinates are "natural"
+- Generalized Momentum or Conjugate Momentum
+  - $p_i = (partial cal(L))/(partial dot(q)_i)$
+- If $(partial cal(H))/(partial t) = 0$, then $cal(H) = "const."$
+- Hamilton's Equations
+  - $dot(q)_i = (partial cal(H))/(partial p_i)$
+  - $dot(p)_i = -(partial cal(H))/(partial q_i)$
+- Liouville's Theorem
+  - $arrow(z) = (arrow(q), arrow(p)) = (q_1, dots, q_n, p_1, dots, p_n)$
+  - $arrow(v) = dot(arrow(z)) = (dot(arrow(q)), dot(arrow(p)))$
+  - $arrow(nabla) dot arrow(v) = 0$
