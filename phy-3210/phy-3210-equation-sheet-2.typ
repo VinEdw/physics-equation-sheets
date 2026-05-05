@@ -92,7 +92,7 @@
   - $det(II - lambda bb(1)) = 0$
   - $II' = mat(lambda_1, 0, 0; 0, lambda_2, 0; 0, 0, lambda_3)$
 - Euler's Equations
-  - $dot(arrow(L)) + arrow(omega) times arrow(L) = arrow(Gamma)$
+  - $dot(arrow(L)) + arrow(omega) times arrow(L) = arrow(Gamma)$ (body frame)
   - $lambda_1 dot(omega)_1 - (lambda_2 - lambda_3) omega_2 omega_3 = Gamma_1$
   - $lambda_2 dot(omega)_2 - (lambda_3 - lambda_1) omega_3 omega_1 = Gamma_2$
   - $lambda_3 dot(omega)_3 - (lambda_1 - lambda_2) omega_1 omega_2 = Gamma_3$
