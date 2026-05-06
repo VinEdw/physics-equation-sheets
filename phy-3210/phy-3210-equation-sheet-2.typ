@@ -100,14 +100,6 @@
   - Pivot point displaced by $Delta arrow(r) = (Delta x, Delta y, Delta z)$ from the CM
   - $I_(x x) = I_(x x)^"cm" + M (Delta y^2 + Delta z^2)$
   - $I_(y z) = I_(y z)^"cm" - M Delta y Delta z$
-- Precession of a Top due to a Weak Torque
-  - $lambda_1 = lambda_2 != lambda_3$
-  - $dot(hat(e))_3 = arrow(Omega) times hat(e)_3$
-  - $arrow(Omega) = (M g R)/(lambda_3 omega) hat(z)$
-- Free Precession of a Top
-  - $lambda_1 = lambda_2 != lambda_3$
-  - $Omega_"b" = (lambda_1 - lambda_3)/lambda_1 omega_3$
-  - $Omega_"s" = L/lambda_1$
 
 == Chapter 11 Coupled Oscillators and Normal Modes
 
