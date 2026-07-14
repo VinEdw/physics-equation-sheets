@@ -398,6 +398,10 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Kinetic energy ($K_"rot"$)
   - Energy of rotational motion
   - $K = 1/2 I omega^2$
+- Potential energy in general ($U_c$)
+  - If the work done by a force does not depend on the path taken between any two points, then that force is _conservative_
+  - We can define a potential energy function $U_c$ for the conservative force $F_c$
+  - $Delta U_c = -W_c$
 - Gravitational potential energy ($U_g$)
   - Energy due to position in a gravitational field
   - $U_g = m g h$
