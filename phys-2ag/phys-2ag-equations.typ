@@ -422,8 +422,17 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Work-kinetic energy theorem
   - $W_"tot" = Delta K$
 - Conservation of energy
-  - $E_i + W_"nc" + Q_"ext" = E_f$
-  - $K_i + U_(g i) + U_(s i) + ... + W_"nc" + Q_"ext" = K_f + U_(g f) + U_(s f) + ... + Delta U_"int"$
+  - General
+    - $W_"nc" + Q_"ext" = Delta E$
+    - $E_i + W_"nc" + Q_"ext" = E_f$
+  - Mechanical energy focused
+    - $W_"nc" = Delta K + Delta U$
+    - $K_i + U_i + W_"nc" = K_f + U_f$
+  - Thermal energy focused
+    - $Q_"ext" = Delta U_"int"$
+  - Combined (mechanical & thermal)
+    - $W_"nc" + Q_"ext" = Delta K + Delta U + Delta U_"int"$
+    - $K_i + U_i + W_"nc" + Q_"ext" = K_f + U_f + Delta U_"int"$
 
 == Momentum
 
