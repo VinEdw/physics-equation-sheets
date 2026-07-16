@@ -395,7 +395,7 @@ The next step is understanding what the equations mean, when to use them, and ho
 - Kinetic energy ($K$)
   - Energy of motion
   - $K = 1/2 m v^2$
-- Kinetic energy ($K_"rot"$)
+- Kinetic energy rotational ($K_"rot"$)
   - Energy of rotational motion
   - $K = 1/2 I omega^2$
 - Potential energy in general ($U_c$)
