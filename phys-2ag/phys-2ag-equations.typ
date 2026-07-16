@@ -419,6 +419,8 @@ The next step is understanding what the equations mean, when to use them, and ho
     - Temperature remains constant until all the substance has undergone the phase change
 - Sound energy ($U_"sound"$)
   - Energy of sound waves
+- Work-kinetic energy theorem
+  - $W_"tot" = Delta K$
 - Conservation of energy
   - $E_i + W_"nc" + Q_"ext" = E_f$
   - $K_i + U_(g i) + U_(s i) + ... + W_"nc" + Q_"ext" = K_f + U_(g f) + U_(s f) + ... + Delta U_"int"$
